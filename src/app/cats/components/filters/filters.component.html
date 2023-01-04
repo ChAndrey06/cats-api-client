@@ -1,0 +1,20 @@
+<!-- <mat-select [formControl]="bankMultiCtrl" placeholder="Banks" [multiple]="true" #multiSelect>
+    <ngx-mat-select-search [formControl]="bankMultiFilterCtrl"></ngx-mat-select-search>
+    <mat-option *ngFor="let bank of filteredBanksMulti | async" [value]="bank">
+        {{bank.name}}
+    </mat-option>
+</mat-select> -->
+<div style="display: flex; justify-content: center; gap: 10px;">
+    <mat-form-field appearance="outline">
+        <mat-label>Toppings</mat-label>
+        <mat-select multiple>
+            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Toppings</mat-label>
+        <mat-select multiple>
+            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
